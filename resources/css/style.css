@@ -19,6 +19,7 @@ body {
     font-weight: bold;
     font-size: 24px;
     background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 /* Navbar */
@@ -156,4 +157,30 @@ body {
 
 .upgrade-counter span:last-child {
     border: 0;
+}
+
+/* Leaderboard */
+.leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.leaderboard-container h1 {
+    margin-top: 25px;
+}
+
+.leaderboard-container p {
+    margin-top: 25px;
+}
+
+.leaderboard-table {
+    margin-top: 25px;
+    border: 2px solid var(--border-color);
+}
+
+.leaderboard-item {
+    padding: 5px 15px;
+    border-bottom: 2px solid var(--border-color);
 }

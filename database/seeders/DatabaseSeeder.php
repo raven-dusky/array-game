@@ -35,5 +35,24 @@ class DatabaseSeeder extends Seeder
             'bit_splitter' => 0,
             'garbage_collector' => 0,
         ]);
+
+        User::factory()->create([
+            'name' => 'Test',
+            'email' => 'test@email.com',
+            'password' => bcrypt('password'),
+        ]);
+
+        Score::create([
+            'user_id' => 2,
+            'total' => rand(0, 100),
+        ]);
+
+        Upgrade::create([
+            'user_id' => 2,
+            'loop_enhancer' => rand(0, 100),
+            'stack_overdrive' => rand(0, 100),
+            'bit_splitter' => rand(0, 100),
+            'garbage_collector' => rand(0, 100),
+        ]);
     }
 }
