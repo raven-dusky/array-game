@@ -6,7 +6,7 @@
         <li class="navbar-item"><a href="{{ route('register') }}">Register</a></li>
         @endguest
         @auth
-        <li class="navbar-item"><a href="">Perks</a></li>
+        <li class="navbar-item"><a href="{{ route('upgrades') }}">Upgrades</a></li>
         <li class="navbar-item">
             <a href="" onclick="event.preventDefault(); document.querySelector('#logout').submit()">Logout</a>
             <form method="POST" action="{{ route('logout') }}" id="logout">

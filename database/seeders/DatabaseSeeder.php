@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Score;
+use App\Models\Upgrade;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -25,6 +26,14 @@ class DatabaseSeeder extends Seeder
         Score::create([
             'user_id' => 1,
             'total' => 0,
+        ]);
+
+        Upgrade::create([
+            'user_id' => 1,
+            'loop_enhancer' => 0,
+            'stack_overdrive' => 0,
+            'bit_splitter' => 0,
+            'garbage_collector' => 0,
         ]);
     }
 }
