@@ -23,7 +23,7 @@ Curious about how others are doing? Check out the **Leaderboard** to view top pl
 
 ## Setup
 ```bash
-git clone https://github.com/raven-dusky/blackbox-chatroom.git
+git clone https://github.com/raven-dusky/array-game.git
 cd blackbox
 composer install
 npm install
